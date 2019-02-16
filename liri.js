@@ -6,15 +6,16 @@
 
 // LIRI will search Spotify for songs, Go to Spotify and get music data
 require("dotenv").config();
+
 var keys = require("./keys.js");
 
 var Spotify = require('node-spotify-api');
- 
-var spotify = new Spotify({
-    // INSET MY ID AND SECRET BELOW
-  id: asdfasdfasdfasdfasdfsdf,
-  secret: asdfasdfad
-});
+
+var request = require("request");
+
+var moment = reqiure("moment");
+
+var spotify = new Spotify(keys.spotify);
 
 
 function getMusicData() { 
