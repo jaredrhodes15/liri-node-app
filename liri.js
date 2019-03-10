@@ -37,7 +37,7 @@ function spotifyQuery() {
 		queryTerm = comboTerm;
 	}
 	else if (process.argv[2] ==="spotify-this-song" && process.argv[3] == undefined) {
-		queryTerm = "The Sign, Ace of Base ";
+		queryTerm = "The Sign, Ace of Base";
 	}
 	else if (process.argv[2] === "do-what-it-says") {
 		queryTerm = readQuery;
